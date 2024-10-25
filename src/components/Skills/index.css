@@ -1,0 +1,262 @@
+.skills-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-card{
+    border-radius: 15px;
+    width: 90%;
+    box-shadow: 4px 4px 8px 2px #90909098;
+    display: flex;
+    padding: 15px 0px;
+    overflow: auto;
+}
+
+
+/* App.css */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .skill-card {
+    background: #fff;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    position: relative;
+  }
+  
+  .skill-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .skill-card:hover .skill-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .skill-card-front,
+  .skill-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    
+  }
+  
+  .skill-card-front {
+    background: #5F2FE7;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  
+  .skill-card-back {
+    background: #247fca;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  
+  .skill-img{
+    height: 100px;
+  }
+
+  .skill-description{
+    width: 90%;
+    font-family: 'Roboto';
+  }
+
+  .skill-name{
+    font-family: 'Roboto';
+    font-weight: 500;
+    background-image: linear-gradient(to right, #ad000000, #bebebe93);
+    padding: 0px 5px;
+  }
+
+
+  .skill-card {
+    opacity: 0;
+    transform: rotateY(90deg);
+    animation: rotateIn 0.6s ease-out forwards;
+  }
+  
+  @keyframes rotateIn {
+    to {
+      opacity: 1;
+      transform: rotateY(0);
+    }
+  }
+  
+  
+  
+  @media (max-width: 768px){
+    .skills-card{
+      width: 95%;
+    }
+  }
+
+  @media (max-width: 768px){
+    .skills-section{
+      display: none;
+    }
+  }
+
+  /* mobile skill styling */
+
+  .skills-sm-container{
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+  .skills-sm-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+
+  .skills-heading{
+    text-align: center;
+    font-size: 2rem;
+    color: #5F2FE7;
+    position: relative;
+    animation: fadeIn 2s;
+    bottom: 20px;
+  }
+
+  .globe-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    perspective: 1000px;
+}
+
+.globe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(30deg) rotateY(0deg);
+    animation: rotateGlobe 10s infinite linear;
+}
+
+.skill-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-icon img {
+    width: 70%;
+    height: 70%;
+}
+
+/* Positioning skill icons */
+.icon-html { transform: rotateY(0deg) translateZ(150px); }
+.icon-css { transform: rotateY(60deg) translateZ(150px); }
+.icon-javascript { transform: rotateY(120deg) translateZ(150px); }
+.icon-react { transform: rotateY(180deg) translateZ(150px); }
+.icon-node { transform: rotateY(240deg) translateZ(150px); }
+.icon-bootstrap { transform: rotateY(300deg) translateZ(150px); }
+
+.icon-sqlite { transform: rotateY(0deg) rotateX(-30deg) translateZ(150px); }
+.icon-python { transform: rotateY(60deg) rotateX(-30deg) translateZ(150px); }
+.icon-github { transform: rotateY(120deg) rotateX(-30deg) translateZ(150px); }
+.icon-wordpress { transform: rotateY(180deg) rotateX(-30deg) translateZ(150px); }
+
+/* Additional icons for poles */
+.icon-pole1 { transform: rotateX(90deg) rotateY(0deg) translateZ(150px); }
+.icon-pole2 { transform: rotateX(90deg) rotateY(90deg) translateZ(150px); }
+.icon-pole3 { transform: rotateX(-90deg) rotateY(0deg) translateZ(150px); }
+.icon-pole4 { transform: rotateX(-90deg) rotateY(90deg) translateZ(150px); }
+
+/* Animation to rotate the globe */
+@keyframes rotateGlobe {
+    from {
+        transform: rotateX(250deg) rotateY(250deg);
+    }
+    to {
+        transform: rotateX(30deg) rotateY(360deg);
+    }
+}
+
+
+
+
+
+  @media (min-width: 768px){
+    .skills-sm-container{
+      display: none;
+    }
+  }
+
+  .html{
+    color: #E44D26;
+  }
+
+  .css{
+    color: #264DE4;
+  }
+
+  .javascript{
+    color: #EFD81D;
+  }
+
+  .bootstrap{
+    color: #563D7C;
+  }
+
+  .react{
+    color: #5ED3F3;
+  }
+
+  .node{
+    color: #72A864;
+  }
+
+  .wordpress{
+    color: #32373C;
+  }
+
+  .sqlite{
+    color: #2489CD;
+  }
+
+  .python{
+    color: #3470A0;
+  }
+
+  .mongodb{
+    color: #118D4D;
+  }
+
+ 
+
+  .figma{
+    color: #9D56F7;
+  }

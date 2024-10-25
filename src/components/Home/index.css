@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Roboto+Serif:ital,wght@1,600&family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.home-main-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 25px;
+    height: 100vh;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: landingEffect 1s forwards;
+    align-items: center;
+    gap: 10%;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+  
+  @keyframes landingEffect {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+.profile-bg1{
+    background-image: linear-gradient(to right, rgb(0, 102, 255), rgb(176, 0, 211));
+    padding: 0px 0px 0px 0px;
+    border-radius: 100% 0px 0px 20px;
+    height: 70vh;
+    position: relative;
+    top: 100px;
+}
+
+.social-media-icons-container{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    gap: 12px;
+    font-size: 23px;
+    color: #494848;
+    margin-top: 35px;
+}
+
+.home-details-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .home-details-container{
+        padding-left: 5%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .home-main-container{
+        height: 70vh;
+        top: 0px;
+    }
+
+    .profile-bg{
+        display: none;
+    }
+
+    .home-details-container{
+       text-align: center;  
+       padding-left: 0px;     
+    }
+
+    .social-media-icons-container{
+        justify-content: center;
+    }
+
+    .pro-background{
+        display: none;
+    }
+    
+}
+
+.name{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    background-image: linear-gradient(to right, rgb(0, 102, 255), rgb(176, 0, 211));
+    -webkit-background-clip: text; /* For WebKit-based browsers */
+    color: transparent;
+    font-size: 35px;
+}
+
+
+
+
+.work-title{
+    font-size: 24px;
+    color: #5e5c5c;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.resume-btn {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: 0px solid #007bff;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    background-image: linear-gradient(to right, rgb(0, 102, 255), rgb(176, 0, 211));
+    margin-top: 50px;
+}
+
+.resume-btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    color: #fff;
+    transform: scale(1.05); /* Optional: Increase size on hover */
+}
+
+.resume-btn:active {
+    transform: scale(0.95); /* Optional: Decrease size when pressed */
+}
+
+.download{
+    align-self: center;
+    margin-top: 3px;
+}
+
+.icon-link{
+    color: #686868;
+}
+
+.resume-btn-link{
+    outline: none;
+}
+
+@keyframes profile {
+    from{
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        background-color: #0082C6;
+        transform: translateX(5%);
+    }
+
+    to{
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        background-color: #93B1E5;
+        transform: translateY(-5%);
+    }
+
+
+}
+
+.home-profile-img{
+    height: 400px;
+    width: 400px;
+    border: solid 25px #67708F;
+    border-radius: 50%;
+}
+
+.pro-background{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: profile;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    border-radius: 20%;
+}
+
+
+@media (max-width: 768px) {
+    .pro-background{
+        display: none;
+    }
+    
+}
+
+
+@media (width: 1024px) and (height: 600px){
+    .pro-background{
+        width: 400px;
+        height: 400px;
+    }
+
+    .home-profile-img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .skills-section{
+        margin-top: 10%;
+    }
+
+    .project-section-container{
+        margin-top: 10%;
+    }
+
+    .youtube-md-device{
+        margin-top: 10%;
+    }
+
+    
+
+@media (width: 1280px) and (height: 800px) {
+    .contact-section-container{
+        margin-top: 10%;
+    }
+}
+}
+

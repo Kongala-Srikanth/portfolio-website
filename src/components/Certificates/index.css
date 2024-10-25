@@ -1,0 +1,151 @@
+.certificate-section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    padding-top: 25px;
+    margin-bottom: 20px;
+}
+
+.certificate-main-container-card{
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px 2px #90909098;
+    display: flex;
+    padding: 15px 0px;
+
+}
+
+
+
+.certificates-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding: 0px;
+  }
+  
+  .certificate-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    height: 280px;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  @media (max-width: 767px){
+    .certificate-main-container-card{
+      width: 100%;
+      
+    }
+
+    .certificate-card{
+      width: 230px;
+      height: 220px;
+    }
+  }
+  
+  .certificate-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.255);
+
+  }
+  
+  .certificate-image {
+    max-width: 100%;
+    max-height: 80%;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .certificate-title {
+    padding: 0px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Base styles for the container and certificate cards */
+.certificate-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+  }
+  
+  .certificate-card {
+    margin: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: rotateY(90deg) translateY(50px);
+    animation: shuffleLanding 0.8s forwards;
+  }
+  
+  /* Shuffle landing animation */
+  @keyframes shuffleLanding {
+    0% {
+      opacity: 0;
+      transform: rotateY(90deg) translateY(50px);
+    }
+    50% {
+      opacity: 1;
+      transform: rotateY(-10deg) translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateY(0deg) translateY(0);
+    }
+  }
+  
+  /* Add a delay for each card to create a cascading effect */
+  .certificate-card:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .certificate-card:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .certificate-card:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  .certificate-card:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  .certificate-card:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  .certificate-card:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+  .certificate-card:nth-child(7) {
+    animation-delay: 0.4s;
+  }
+  .certificate-card:nth-child(8) {
+    animation-delay: 0.3s;
+  }
+  .certificate-card:nth-child(9) {
+    animation-delay: 0.2s;
+  }
+  .certificate-card:nth-child(10) {
+    animation-delay: 0.1s;
+  }
+  
+  /* Hover effect */
+  .certificate-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  @media (max-width: 767px){
+    .certificate-main-container-card{
+      width: 95%;
+    
+    }
+  }

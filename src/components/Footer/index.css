@@ -1,0 +1,100 @@
+/* src/components/Footer.css */
+.footer {
+    background-color: #1c3d50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-social .fa-icon {
+    font-size: 20px;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .footer-social .fa-icon:hover {
+    color: #0177b7;
+  }
+  
+  .footer-logo {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #0177b7;
+    border-bottom: 1px solid #0177b7;
+  }
+  
+  .privacy-popup-container{
+    background-color: #ffffff;
+    height: 85vh;
+    width: 86vw;
+    border-radius: 15px;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding: 35px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    line-height: 1.7;
+    color: #494848;
+    font-weight: 500;
+  }
+
+.h2-sub-heading{
+  text-align: left;
+  color: #000;
+}
+
+.privacy-close-btn-contaier{
+  text-align: right;
+}
+
+.privacy-close-btn{
+ position: fixed;
+ right: 9%;
+ background-color: transparent;
+ outline: none;
+ cursor: pointer;
+ border-width: 0px;
+ padding: 0px;
+ margin: 0px;
+ color: #000;
+}
+
+.privacy-close-btn:hover {
+  background-color: rgba(0, 60, 128, 0.37);
+  color: white; /* Optional: Change text color on hover */
+}
+
+.privacy-close-icon{
+  
+  font-size: 20px;
+}
+
+.icons-link{
+  color: #ffffff;
+}
